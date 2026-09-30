@@ -1,0 +1,17 @@
+# Whitelist: only source code and docs are published. Captures, exports, dumps, game files,
+# reverse-engineering notes and binaries never go into this repo.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/build.cmd
+!/src/
+!/tools/
+/tools/*
+!/tools/capture.py
+!/tools/harvest_instances.py
+!/tools/nl2_export.py
+!/tools/nl2_textures.py
+!/tools/nl2_capture_to_obj.py
+__pycache__/
+*.pyc
