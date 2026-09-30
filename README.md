@@ -9,7 +9,8 @@ open them in Blender (or any 3D tool), scale them and prepare them for printing.
 
 > **Want a model you are allowed to sell?** Use the spline route instead:
 > [nl2-blender-track-builder](https://github.com/zm2283145/nl2-blender-track-builder) rebuilds the ride in
-> Blender from your own exported track spline and supports.
+> Blender from your own exported track spline and supports. With its *Procedural Parts Only* mode (the
+> default without a game asset pack), every part is original geometry.
 
 ---
 
@@ -107,8 +108,9 @@ Prebuilt binaries are attached to the GitHub releases.
 
 ## Dumping game files for the Blender add-on (optional)
 
-[nl2-blender-track-builder](https://github.com/zm2283145/nl2-blender-track-builder) can use a few meshes
-(ties, connectors, footers) from **your own** game install. `nl2vfsdump.dll` copies them out of the game's
+[nl2-blender-track-builder](https://github.com/zm2283145/nl2-blender-track-builder) can optionally use a few
+meshes (ties, connectors, footers) from **your own** game install, for a closer personal-use replica. It does
+not need them: without them it builds fully procedural parts. `nl2vfsdump.dll` copies them out of the game's
 data packages:
 
 1. Write the file list: `python build_assets.py --list build\nl2vfsdump.txt` (the script is in the add-on
